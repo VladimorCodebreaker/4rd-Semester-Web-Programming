@@ -1,0 +1,25 @@
+﻿@model IndexViewModel
+
+@{
+    ViewData["Title"] = "Home Page";
+}
+
+<h1 style="font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif; font-weight: bolder; text-align: center; background-color: pink;">-> Student <-</h1>
+
+@foreach (var student in Model.Group1)
+{
+    <div style="background-color:blue; margin-bottom: 5px;">@student.FirstName</div>
+    <div style="background-color:green; margin-bottom: 5px;">@student.LastName</div>
+    <div style="background-color:red;">@student.StudentNumber</div>
+    <br />
+}
+
+<hr />
+
+@foreach (var student in Model.Group2)
+{
+    <div style="background-color:blue; margin-bottom: 5px;">@student.FirstName</div>
+    <div style="background-color:green; margin-bottom: 5px;">@student.LastName</div>
+    <div style="background-color:red;">@student.StudentNumber</div>
+    <br />
+}
